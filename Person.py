@@ -14,12 +14,6 @@ class MyPerson:
         self.done = False
         self.state = '0'
         self.dir = None
-    def getRGB(self):
-        return (self.R,self.G,self.B)
-    def getTracks(self):
-        return self.tracks
-    def getId(self):
-        return self.i
     def getState(self):
         return self.state
     def getDir(self):
@@ -58,14 +52,3 @@ class MyPerson:
                 return False
         else:
             return False
-class MultiPerson:
-    def __init__(self, persons, xi, yi):
-        self.persons = persons
-        self.x = xi
-        self.y = yi
-        self.tracks = []
-        self.R = randint(0,255)
-        self.G = randint(0,255)
-        self.B = randint(0,255)
-        self.done = False
-        
